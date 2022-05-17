@@ -1,0 +1,34 @@
+﻿<Window x:Class="InventarioFarmacia.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InventarioFarmacia"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="460" Width="340">
+    <Grid>
+        <TextBox x:Name="txtNombreMedicamento" HorizontalAlignment="Center" Height="20" Margin="0,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="300"/>
+        <Label x:Name="label" Content="Nombre del medicamento" HorizontalAlignment="Left" Margin="20,10,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cmbBoxTipoMedicamento" HorizontalAlignment="Center" Margin="0,87,0,0" VerticalAlignment="Top" Width="300" SelectedIndex="0">
+            <ComboBoxItem Content="Seleccione Uno"/>
+            <ComboBoxItem Content="Analgésico"/>
+            <ComboBoxItem Content="Analéptico"/>
+            <ComboBoxItem Content="Anestésico"/>
+            <ComboBoxItem Content="Antiácido"/>
+            <ComboBoxItem Content="Antidepresivo"/>
+            <ComboBoxItem Content="Antibióticos"/>
+        </ComboBox>
+        <Label x:Name="label1" Content="Tipo Medicamento:" HorizontalAlignment="Left" Margin="20,61,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.553,1.966"/>
+        <Label x:Name="label2" Content="Cantidad de producto:" HorizontalAlignment="Left" Margin="20,114,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.553,1.966"/>
+        <TextBox x:Name="txtCantidadProducto" HorizontalAlignment="Center" Height="20" Margin="0,145,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="300"/>
+        <Label x:Name="label3" Content="Distribuidor a pedir:" HorizontalAlignment="Left" Margin="20,170,0,0" VerticalAlignment="Top" Width="230"/>
+        <RadioButton x:Name="rdBtnCofarma" Content="Cofarma" HorizontalAlignment="Left" Margin="20,195,0,0" VerticalAlignment="Top" GroupName="rdGroupDistribuidor"/>
+        <RadioButton x:Name="rdBtnEmpsefar" Content="Empsefar" HorizontalAlignment="Left" Margin="20,233,0,0" VerticalAlignment="Top" GroupName="rdGroupDistribuidor"/>
+        <RadioButton x:Name="rdBtnCemefar" Content="Cemefar" HorizontalAlignment="Left" Margin="20,214,0,0" VerticalAlignment="Top" GroupName="rdGroupDistribuidor" />
+        <Label x:Name="label4" Content="Sucursal que requiere el medicamento:" HorizontalAlignment="Left" Margin="20,252,0,0" VerticalAlignment="Top" Width="203"/>
+        <CheckBox x:Name="chBoxPrincipal" Content="Principal" HorizontalAlignment="Left" Margin="20,277,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="chBoxSecundaria" Content="Secundaria" HorizontalAlignment="Left" Margin="20,297,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="20,329,0,0" VerticalAlignment="Top" Width="138" Click="btnCancelar_Click"/>
+        <Button x:Name="btnAceptar" Content="Aceptar" HorizontalAlignment="Left" Margin="170,329,0,0" VerticalAlignment="Top" Width="138" Click="btnAceptar_Click"/>
+    </Grid>
+</Window>
